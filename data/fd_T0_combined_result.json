@@ -1,0 +1,75 @@
+{
+  "test": "T0_current_fixedfft48_fd",
+  "pseudo_family": "current PseudoDojo-equivalent ONCV with NLCC",
+  "total_electrons": 320.0,
+  "points": {
+    "minus_005": {
+      "path": "/home/users/tangmingyang/work/NbPdTe235/workflow2/11_pp_diagnostic_20260831/T0_current_fixedfft48_fd/frozen/outputs/minus_005.out",
+      "energy_ry": -4221.98256238,
+      "fermi_energy_ev": -4.6112,
+      "projected_force_ev_per_angstrom": 0.1206924544993846,
+      "fft_dense": [
+        48,
+        216,
+        400
+      ],
+      "amplitude_angstrom": -0.005
+    },
+    "zero": {
+      "path": "/home/users/tangmingyang/work/NbPdTe235/workflow2/11_pp_diagnostic_20260831/T0_current_fixedfft48_fd/frozen/outputs/zero.out",
+      "energy_ry": -4221.98258398,
+      "fermi_energy_ev": -4.6134,
+      "projected_force_ev_per_angstrom": -0.0031774821138863298,
+      "fft_dense": [
+        48,
+        216,
+        400
+      ],
+      "amplitude_angstrom": 0.0
+    },
+    "plus_005": {
+      "path": "/home/users/tangmingyang/work/NbPdTe235/workflow2/11_pp_diagnostic_20260831/T0_current_fixedfft48_fd/frozen/outputs/plus_005.out",
+      "energy_ry": -4221.9825598,
+      "fermi_energy_ev": -4.6155,
+      "projected_force_ev_per_angstrom": -0.12835836945357434,
+      "fft_dense": [
+        48,
+        216,
+        400
+      ],
+      "amplitude_angstrom": 0.005
+    }
+  },
+  "energy_curvature_ev_per_angstrom2": 24.91474508864077,
+  "force_curvature_ev_per_angstrom2": 24.905082395295892,
+  "energy_force_difference_ev_per_angstrom2": 0.009662693344878903,
+  "dfpt_curvature_ev_per_angstrom2": -104.89382735911533,
+  "dfpt_minus_fd_energy_ev_per_angstrom2": -129.8085724477561,
+  "dfpt_minus_fd_force_ev_per_angstrom2": -129.79890975441123,
+  "fd_energy_frequency_cm-1": 97.64497986341071,
+  "fd_force_frequency_cm-1": 97.62604318570726,
+  "odd_energy_slope_ev_per_angstrom": 0.0035102688261506045,
+  "finite_difference_dfermi_ev_per_angstrom": -0.42999999999997485,
+  "ag_result": {
+    "phsave": "/home/users/tangmingyang/work/NbPdTe235/workflow2/06_qe741_version_test_20260829/tmp/_ph0/NbPdTe235_pd_qe741.phsave",
+    "number_of_ag_patterns": 10,
+    "pattern_orthogonality_max_error": 3.1086244689504383e-15,
+    "ag_hermiticity_max_error_ry_per_bohr2": 0.16270107124590272,
+    "reference_mode_outside_ag_coefficient_norm": 7.256883150160511e-13,
+    "ag_frequencies_cm-1": [
+      -200.62076365091283,
+      -148.3919478219839,
+      -126.07039071175863,
+      -82.09944371745735,
+      51.41571186915795,
+      90.95106889433822,
+      122.45562685219512,
+      167.217085913383,
+      173.92744264340718,
+      220.53932932664193
+    ],
+    "reference_mode_projected_curvature_ev_per_angstrom2": -104.89382735911533,
+    "reference_mode_effective_mass_amu": 710.5861876366178,
+    "reference_mode_projected_frequency_cm-1": -200.35337482336513
+  }
+}

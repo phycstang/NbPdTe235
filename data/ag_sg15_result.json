@@ -1,0 +1,22 @@
+{
+  "phsave": "/home/users/tangmingyang/work/NbPdTe235/workflow2/05_sg15_partial_dfpt_20260829/tmp/_ph0/NbPdTe235_sg15.phsave",
+  "number_of_ag_patterns": 10,
+  "pattern_orthogonality_max_error": 2.55351295663786e-15,
+  "ag_hermiticity_max_error_ry_per_bohr2": 0.22814666321811927,
+  "reference_mode_outside_ag_coefficient_norm": 1.3732819887142744e-12,
+  "ag_frequencies_cm-1": [
+    -239.08310031535441,
+    -216.2013849628228,
+    -149.07597183215117,
+    -59.211591955363176,
+    54.82300228242434,
+    85.30570988910345,
+    129.481592170087,
+    142.42311485251358,
+    180.19141333583406,
+    206.96160368492042
+  ],
+  "reference_mode_projected_curvature_ev_per_angstrom2": 8.228180880348054,
+  "reference_mode_effective_mass_amu": 710.5861876366178,
+  "reference_mode_projected_frequency_cm-1": 56.114307957897665
+}

@@ -1,0 +1,15 @@
+&inputph
+  prefix       = 'NbPdTe235_pd_qe741',
+  outdir       = './tmp/',
+  fildyn       = 'NbPdTe235_pd_qe741.partial.dyn',
+  ldisp        = .false.,
+  trans        = .true.,
+  epsil        = .false.,
+  recover      = .false.,
+  start_irr    = 1,
+  last_irr     = 10,
+  tr2_ph       = 1.0d-12,
+  alpha_mix(1) = 0.2,
+  nmix_ph      = 4,
+/
+0.0 0.0 0.0

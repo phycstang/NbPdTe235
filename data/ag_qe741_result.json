@@ -1,0 +1,22 @@
+{
+  "phsave": "/home/users/tangmingyang/work/NbPdTe235/workflow2/06_qe741_version_test_20260829/tmp/_ph0/NbPdTe235_pd_qe741.phsave",
+  "number_of_ag_patterns": 10,
+  "pattern_orthogonality_max_error": 3.1086244689504383e-15,
+  "ag_hermiticity_max_error_ry_per_bohr2": 0.16270107124590272,
+  "reference_mode_outside_ag_coefficient_norm": 7.256883150160511e-13,
+  "ag_frequencies_cm-1": [
+    -200.62076365091283,
+    -148.3919478219839,
+    -126.07039071175863,
+    -82.09944371745735,
+    51.41571186915795,
+    90.95106889433822,
+    122.45562685219512,
+    167.217085913383,
+    173.92744264340718,
+    220.53932932664193
+  ],
+  "reference_mode_projected_curvature_ev_per_angstrom2": -104.89382735911533,
+  "reference_mode_effective_mass_amu": 710.5861876366178,
+  "reference_mode_projected_frequency_cm-1": -200.35337482336513
+}

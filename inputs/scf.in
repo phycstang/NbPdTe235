@@ -1,0 +1,69 @@
+! QE 7.4.1 control using the current PseudoDojo-equivalent NLCC UPFs.
+! Structure: final coordinates from workflow2/relax.out.
+&CONTROL
+  calculation  = 'scf'
+  restart_mode = 'from_scratch'
+  prefix       = 'NbPdTe235_pd_qe741'
+  pseudo_dir   = '/home/users/tangmingyang/tools/abinit'
+  outdir       = './tmp/'
+  tprnfor      = .true.
+  tstress      = .false.
+  disk_io      = 'low'
+  verbosity    = 'high'
+/
+
+&SYSTEM
+  ibrav           = 0
+  nat             = 20
+  ntyp            = 3
+  ecutwfc         = 90.0
+  ecutrho         = 360.0
+  nbnd            = 200
+  occupations     = 'smearing'
+  smearing        = 'fd'
+  degauss         = 0.00367493
+  assume_isolated = '2D'
+/
+
+&ELECTRONS
+  conv_thr         = 1.0d-12
+  electron_maxstep = 300
+  mixing_mode      = 'plain'
+  mixing_beta      = 0.20
+  diagonalization  = 'david'
+/
+
+ATOMIC_SPECIES
+Nb  92.90638  Nb_ONCV_PBE_sr.upf
+Pd 106.42000  Pd_ONCV_PBE_sr.upf
+Te 127.60000  Te_ONCV_PBE_sr.upf
+
+CELL_PARAMETERS angstrom
+      3.736967412000     0.000000000000     0.000000000000
+      0.000000000000    18.876917731000     0.000000000000
+      0.000000000000     0.000000000000    34.200618744000
+
+ATOMIC_POSITIONS crystal
+Nb      0.000000000000     0.626200349500     0.500280608700
+Nb      0.500000000000     0.126200349500     0.499719391300
+Nb      0.000000000000     0.373799650500     0.500280608700
+Nb      0.500000000000     0.873799650500     0.499719391300
+Pd      0.500000000000     0.500000000000     0.489618738100
+Pd      0.000000000000     0.000000000000     0.510381261900
+Pd      0.000000000000     0.767874161300     0.526973385800
+Pd      0.500000000000     0.267874161300     0.473026614200
+Pd      0.000000000000     0.232125838700     0.526973385800
+Pd      0.500000000000     0.732125838700     0.473026614200
+Te      0.500000000000     0.604754479200     0.437589663900
+Te      0.000000000000     0.104754479200     0.562410336100
+Te      0.000000000000     0.500000000000     0.545417472400
+Te      0.500000000000     0.000000000000     0.454582527600
+Te      0.500000000000     0.395245520800     0.437589663900
+Te      0.000000000000     0.895245520800     0.562410336100
+Te      0.500000000000     0.678838474100     0.557943145600
+Te      0.000000000000     0.178838474100     0.442056854400
+Te      0.500000000000     0.321161525900     0.557943145600
+Te      0.000000000000     0.821161525900     0.442056854400
+
+K_POINTS automatic
+30 6 1  0 0 0

@@ -1,0 +1,14 @@
+{
+  "mode_number": 1,
+  "source_frequency_cm-1": -194.479701,
+  "normalization": "maximum Cartesian atomic displacement equals amplitude",
+  "raw_mode_max_norm": 0.41605178215818284,
+  "eigenvector_asr_modes_file": "NbPdTe235_gamma.asr.modes, freq(1) = -194.479701 cm-1",
+  "pattern": "A_g, mode 1: Nb4 z pairs ±0.102, Pd5/6 z ±0.099, Pd7-10 (y ±0.0095, z ±0.055), Te11/12/15/16 (y ∓0.198, z ±0.366), Te13/14 z ±0.231, Te17-20 (y ±0.103, z ±0.059)",
+  "max_atom": "Te11/12/15/16 z, |u| = 0.366 (mass-weighted, norm 0.4160)",
+  "rep7_pattern": "u7 = [0, -0.217, +0.450] pattern on Te11/12/15/16 only (anti-phase z, interlayer dipole)",
+  "fd_amplitude_angstrom": 0.005,
+  "fd_rep7_amplitude_angstrom": 0.005,
+  "curvature_definition": "K = (F(+u) - F(-u)).dhat / (2 * amplitude); dhat = unit vector along mode",
+  "mass_weighted_com_direction_note": "COM of raw (non-mass-weighted) eigenvector is zero; mode is COM-conserving"
+}
