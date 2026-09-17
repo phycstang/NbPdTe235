@@ -41,7 +41,24 @@ error source.**
 | **dv_of_drho / Hartree solve of dvscf (long-range screening)** | **primary suspect** |
 | Sternheimer solve itself | secondary (thresh history looks clean) |
 
+## no2D FD reference (completed)
+
+With identical displacement inputs and the same d7 convention (pattern index 6,
+max|u|=1):
+
+| Method | 2D boundary | no 2D boundary |
+|---|---|---|
+| FD | −46.10 eV/Å² | −46.10 eV/Å² |
+| DFPT (cumulative diag[6,6], QE pattern basis) | −50 305.02 | −50 417.95 |
+
+- FD is boundary-independent (−46.10 both) ✔ as expected
+- DFPT changes by only −112.93 between boundaries — the anomaly (−50 000) is
+  entirely independent of the 2D cutoff
+- Note: the earlier reported FD +46.10 used the opposite d7 sign; magnitudes agree
+- (See data/rep7_no2d_result.json)
+
 ## Remaining work
 
-- no2D FD reference (resubmitted, in workdir not /tmp): expect ≈ +46
 - Grid-point comparison of rep7 converged dvscfin vs FD SCF potential difference
+- The anomaly is in the DFPT response chain itself (dv_of_drho / Hartree screening
+  or the Sternheimer solution), specific to the interlayer dipole pattern

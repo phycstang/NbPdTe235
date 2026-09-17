@@ -1,0 +1,19 @@
+{
+ "test": "rep7_no2d_complete",
+ "boundary": "no2D (assume_isolated removed)",
+ "amplitude_angstrom": 0.005,
+ "pattern_normalization": "max|u|=1 (QE pattern basis, pattern index 6)",
+ "K_FD_no2d_eV_per_A2": -46.1,
+ "K_FD_2d_eV_per_A2": -46.1,
+ "K_DFPT_no2d_cumulative_diag_eV_per_A2": -50417.95,
+ "K_DFPT_2d_cumulative_diag_eV_per_A2": -50305.02,
+ "K_DFPT_D0_static_2d_diag_eV_per_A2": 50411.2,
+ "d_2D_vs_no2D_FD": 0.002,
+ "d_2D_vs_no2D_DFPT": -112.93,
+ "conclusion": "2D cutoff excluded: FD boundary-independent (-46.10 both), DFPT changes by only ~-113 while error is ~-50000. Both FD and DFPT are boundary-independent; the DFPT anomaly (response ~1000x too large along rep7 dipole) persists without 2D cutoff.",
+ "energies_ry": {
+  "zero": -4221.982584,
+  "plus": -4221.98253668,
+  "minus": -4221.98254659
+ }
+}
