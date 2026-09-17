@@ -70,14 +70,13 @@ K_DFPT(rep7 row) = **−14.45** eV/Å² (diagonal). The rep7 row is independentl
 | Fermi-energy-shift divergence (QE issue #424 mechanism) | exact recomputation of `dos_ef` (localdos.f90 formula) = 67.7 Ry⁻¹ = 2.49 states/eV; converged `def` per rep = 0.02–0.12 eV (normal) | **excluded** |
 | drho magnitude anomaly | dump matrix norms: rep7 drhodvloc increment norm (124.7) same as reps 1/4/6 | error is not in \|drho\| scale |
 | KB non-local response (drhodvnl) | waterfall | −11.4 eV/Å², negligible |
+| 2D cutoff (Coul_cut_2D_ph) | no-2D SCF + rep7 ph run | 2D vs no2D differ by only −113 eV/Å² (vs error −50 000) → **excluded** |
 
-### 4. Remaining suspects
+### 4. Remaining suspects (updated after no-2D verification)
 
-1. **`assume_isolated='2D'` response path** (`Coul_cut_2D_ph` Hartree kernel in
-   `dv_of_drho`): rep7 is precisely the interlayer dipole pattern, the most
-   sensitive case for the 2D-cutoff response. Earlier 2D on/off comparison
-   (Δ = −32.8) falls entirely in the response side. Verification run in progress.
-2. **Sternheimer/Hartree solve on the dipole component** (G_z = 0 sector).
+1. **`dv_of_drho` / Hartree solve of the response potential (long-range screening)**:
+   all environment-level suspects are now excluded. See data/no2d_analysis.md.
+2. **Sternheimer solve on the dipole component** (secondary; convergence clean).
 
 ## Why FD is right and DFPT wrong
 
